@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(201, 193, 193);
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.nav{
+    background-color: greenyellow;
+    width: 100%;
+    height: 8vh;
+}
+ .item{
+    display: flex; 
+}
+.item li {
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    font-size: large;
+    color: aliceblue;
+    
+    text-align: center;
+    margin: auto;
+    margin-top: -20px;
+}
+ .bar{
+    height: 25px;
+    width: 50px;
+    margin-top: 0;
+    z-index: 2;
+   
+   
+    
+}
+.one{
+    height: 7px;
+    width: 30px;
+    background-color: #000;
+    margin: 4px 20px;
+   
+}
+@media screen and (max-width:768px){
+    .item{
+        position: fixed;
+        background-color: blue;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path:circle(10px at 90% -10%);
+        transition:  all 1s ease-out;
+        z-index: 2;
+    }
+    .item.open{
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path:circle(700px at 90% -10%);
+        
+
+    }
+
+}
+.card{
+    width: 20vw;
+    height: 15rem;
+    background-color: rgb(184, 218, 218);
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    left: 15vw;
+    overflow: hidden;
+    z-index: 1;
+}
+.card2{
+    width: 20vw;
+    height: 15rem;
+    background-color: rgb(24, 241, 241);
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    left: 40vw;
+    overflow: hidden;
+    z-index: 1;
+}
+.card3{
+    width: 20vw;
+    height: 15rem;
+    background-color: rgb(46, 65, 65);
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    left: 65vw;
+    overflow: hidden;
+    z-index: 1;
+}
+.card4{
+    width: 20vw;
+    height: 15rem;
+    background-color: rgb(234, 243, 243);
+    position: absolute;
+    text-align: center;
+    top: 22rem;
+    left: 15vw;
+    overflow: hidden;
+    z-index: 1;
+}
+.card5{
+    width: 20vw;
+    height: 15rem;
+    background-color: rgb(196, 240, 206);
+    position: absolute;
+    text-align: center;
+    top: 22rem;
+    left: 40vw;
+    overflow: hidden;
+    z-index: 1;
+}
+.card:hover{
+    box-shadow: 20rem;
+    transform: translatey(-1rem);
+}
+.card2:hover{
+    box-shadow: 20rem;
+    transform: translatey(-1rem);
+}
+.card3:hover{
+    box-shadow: 20rem;
+    transform: translatey(-1rem);
+}
+.card4:hover{
+    box-shadow: 20rem;
+    transform: translatey(1rem);
+}
+.card5:hover{
+    box-shadow: 20rem;
+    transform: translatey(1rem);
+}
+    
+
